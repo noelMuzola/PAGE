@@ -1,0 +1,70 @@
+/*UN COMMENTAIRE SUR CSS*/ /**/
+/* ## {
+   { 
+    
+  }
+} */
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color: blue;
+  font-size: 15px;
+}
+li {
+  color: green;
+  font-size: 18px;
+}
+#title {
+  color: brown;
+  font-size: 20px;
+}
+/*pour l atribut id:#*/
+.titre {
+  color: yellow;
+  font-size: 20px;
+}
+/*pour l atribut class:.*/
+h1 {
+  color: red;
+  font-size: 30px;
+}
+.contenaire {
+  background-color: rgba(126, 70, 70, 0.685);
+  text-align: center;
+}
+.sous-ligne {
+  text-decoration: underline;
+}
+h3 {
+  font-style: italic;
+  font-size: 30px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 3ex;
+}
+/*font-zize*/
+/*px ou pt pour blocker la mise enforme de facons que l'utilisateur ne puisse la modifier*/
+/*%,em,ex pour laisser à l'utilisateur la possiblité de modifier la mise en forme*/
+/*font-weight*/
+/**/
+body {
+  background-color: aquamarine;
+}
+.image {
+  float: inline-start;
+}
+.audio {
+  float: center;
+  width: 120px;
+  position: absolute;
+  left: 35em;
+}
+.video {
+  float: right;
+  width: 120px;
+  position: absolute;
+  left: 20em;
+}

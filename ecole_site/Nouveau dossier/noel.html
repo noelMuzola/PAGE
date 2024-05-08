@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Ma premiere page</title>
+			<meta charset="utf-8"/>
+			<link rel="stylesheet" href="style.css"/>
+			<!""link pour relier notre fichier html et css"">
+			<link rel="shortcut icon" href="Sample Pictures/Images/Hydrangeas.jpg"> 
+			<!"" pour creer les logos de notre site"">
+			
+		</head> 
+	<body>
+		<OL>
+			<LI><A HREF="#34">PREMIER</A></LI>
+			<LI><A HREF="#35">DEUXIEME</A></LI>
+			<LI><A HREF="#36">TROISIEME</A></LI>	
+		</OL>
+		<!""A HREF="#"pour referencier une valeur "">
+		<H1 ID="34">MON FRERE</H1>
+		<H2>MA SOEUR</H2>
+		<H3>MON PERE</H3>
+		<H1>MA MERE</H1>
+		<!""H pour creer de titre"">
+		<!""P pour creer de paragraphe "">
+		<!""LI pour creer de liste "">
+		<P>PARAGRAPHE</P>
+		<P>PRPR <b>ffffffffffff</b> PPRPR?J </BR>DFDCVCSS</P>
+		<P>FFFFFF</P>
+		<!""BR POUR FAIRE DE RETOUR A LA LIGNE DANS UN PARAGRAPHE "">
+		<!""ID pour faire appele à la reference "">
+		<UL>
+			<LI ID="35">MIKADO LANEMO</LI>
+			<LI>MOUCHARD PUANT</LI>
+			<LI>RESTAURANT DE LUXE</LI>
+			<LI>AMIE ENEMIE</LI>
+		</UL>
+		<!""UL POUR LISTE AVEC POINT ""> 	
+		<!""on peut utiliser aussi l'element dl pour creer de liste de definition 
+		  en utilsant dt pour le terme et dd pour la difinition proprement dite""> 
+		<div> 
+			<h3 class="video">VIDEO</h3>
+			<h3 class="audio">AUDIO</h3>
+			<h3 class="image">IMAGE</h3>
+			<img src="Sample Pictures/Images/Koala.jpg" height="300" alt="image Koala">
+			<video controls="controls" preload="auto" poster="te amo.png" title="berlin chante te amo" width="500px">
+				<source src="te amo.avi"></source>
+				<source src="te amo.webm"></source>
+				<source src="te amo.ogg"></source>
+			</video>  
+			<audio controls="controls" autoplay="autoplay" preload="auto" title="Marcelino paninino" width="300px"> 
+				<source src="Marcelino.mp3.mp3"></source>
+				<source src="Marcelino.mp3.ogg"></source>
+			</audio>
+		</div>
+		<!"" pour inserer une photo sur notre page il faut tjr utliser la balise div et le code de la ligne 44>
+		<OL>
+			<LI ID="36">MIKADO LANEMO</LI>
+			<LI>MOUCHARD PUANT <STRONG>OTHNIEL</STRONG></LI>
+			<LI>RESTAURANT DE LUXE <EM>REHAOBOT </EM></LI>
+			<LI>AMIE ENEMIE <MARK>JUSLAIN</MARK></LI>
+		</OL>
+		<!""OL POUR LISTE AVEC CHIFFRE "">
+		<!"" apprentissage des liens"">
+		<P>VOICI LE LIEN DU FICHIER <A HREF="page2.HTML"target="blank">page2</A></P>
+		<P>VOICI LE LIEN DU FICHIER <A HREF="Sample Pictures/Pages/page3.HTML"target="blank">page3</A></P>
+		<!""POUR LE SOUS DOSSIER FAUR ECRIRE LE NOM DU SOUS DOSSIER PUIS LE NOM DU FICHIER"">
+		<P>VOICI LE LIEN DU FICHIER <A HREF="../page1.HTML"target="blank">page1</A></P>
+		<P>Telecharger mon <A HREF="celvie.docx"target="blank">super fichier</A></P>
+		<!""PROBLEME ou pas, nous l'ignorons du fait qu'on a deja le fichier sur notre ordinateur"">
+		<p>cliquer ici pour voir le site de wikipedia <a href="http://.fr wikipedia.org" target="blank">ici</a> </p>
+		<!"" voila cmnt on cree un lien externe ""> <!""target="blank" pour ouvrir notre lien dans un notre onglet"">
+		<H3>TABLEAU</H3>
+		<div>
+			<table border="3" width="50%">  
+				<!"" pour creer une LEGENDE on fait comme suite: "">
+				<caption>Population d'europe</caption>
+				<!""En-tête"">
+				<thead>
+					<tr>
+						<th>pays</th>
+						<th>population</th>
+					</tr>
+				</thead>
+				<!""corps du tableau "">
+				<tbody>
+				<tr>
+					<td>France</td>
+					<td>66M</td>
+				</tr>		
+				<tr>
+					<td>Allemagne</td>
+					<td>82M</td>
+				</tr>
+				<tr>
+					<td>Espagne</td>
+					<td>47M</td>
+				</tr>
+				</tbody>
+			</table>
+			<!""pour la conception de tableau "">
+		</div>	
+
+		<H3>FORMULAIRE</H3>
+		<form method="post" action="traitement.php">
+			<fieldset>
+				<legend>Informations obligatoires</legend>	
+					<label for="prenom">Saisissez votre nom :</label>
+					<input type="text" name="prenom" id="prenom" placeholder="ex:noel" required="required"/>
+					<label for="mail">Saisissez votre mail :</label> 
+                    <input type="email" name="mail" id="mail" required="required"/>
+                    <label for="age">Saisissez votre âge</label>
+                    <input type="number" min="10" max="40" step="2" value="12">
+			</fieldset>
+			<fieldset>
+				<legend>Informations facultatives</legend>
+					<p>
+                        <input type="radio" name="sexe" value="homme" id="homme"/> 
+						Vore genre ?
+						<label for="homme">Homme</label> 
+						<input type="radio" name="sexe" value="femme" id="femme"/>
+                        <label for="femme">Femme</label>
+                        <!-- autre façon de faire -->
+                        <label for="genre"> categore</label>
+                        <option selected value="femme"> Femme</option>
+                        <select name="genre" id="genre">
+                            <option value="homme"> Homme</option>
+                        </select>
+					</p>
+					<p>
+						<label for="commentaire">Avez-vous un commentaiere ?</label>
+						<textarea name="commentaire" id="commentaire"></textarea> 
+					</p>
+			</fieldset>
+		</form> 
+
+		<!"" appartir d'ici tout ce qui vien appres c'est pour le style(CSS) je le separe pour ne pas se perdre dans tous ses lignes de code "">
+	
+		<OL>
+			<LI><A HREF="#34">PREMIER</A></LI>
+			<LI><A HREF="#35">DEUXIEME</A></LI>
+			<LI><A HREF="#36">TROISIEME</A></LI>	
+		</OL>
+		<!""A HREF="#"pour donner à une valeur une reference "">
+		<H1 ID="34">MON FRERE</H1>
+		<H2>MA SOEUR</H2>
+		<H3>MON PERE</H3>
+		<H1>MA MERE</H1>
+		<!""H pour creer de titre"">
+		<!""P pour creer de paragraphe "">
+		<!""LI pour creer de liste "">
+		<P>PARAGRAPHE</P>
+		<P>PRPRPPRPR?J </BR>DFDCVCSS</P>
+		<P>FFFFFF</P>
+		<!""BR POUR FAIRE DE RETOUR A LA LIGNE DANS UN PARAGRAPHE "">
+		<!""ID pour faire appele à la reference "">
+		<div class="contenaire">
+		<UL>			
+			<LI ID="35">MIKADO LANEMO</LI>
+			<LI><span class="sous-ligne">MOUCHARD PUANT</span></LI>
+			<LI>RESTAURANT DE LUXE</LI>
+			<LI>AMIE ENEMIE</LI>
+		</UL>
+		</div>
+		<!""div et span permet de selection un block de ligne pour la mise en forme "">
+		<!""il est à noter que span doit tjrs etre inserer dans une ligne pour fonctionner; idem pour strong,em,mark et d'autre element de type inline "">
+		<!""UL POUR LISTE AVEC POINT""> 
+		<OL>
+			<LI ID="36">MIKADO LANEMO</LI>
+			<LI>MOUCHARD PUANT <STRONG>OTHNIEL</STRONG></LI>
+			<LI>RESTAURANT DE LUXE <EM>REHAOBOT </EM></LI>
+			<LI>AMIE ENEMIE <MARK>JUSLAIN</MARK></LI>
+		</OL>
+		
+		<!""OL POUR LISTE AVEC CHIFFRE "">
+		<!"" apprentissage des liens"">
+		<P>VOICI LE LIEN DU FICHIER <A HREF="page2.HTML">page2</A></P>
+		<P class="titre">VOICI LE LIEN DU FICHIER <A HREF="Sample Pictures/Pages/page3.HTML">page3</A></P>
+		<!""POUR LE SOUS DOSSIER FAUR ECRIRE LE NOM DU SOUS DOSSIER PUIS LE NOM DU FICHIER"">
+		<P>VOICI LE LIEN DU FICHIER <A HREF="../page1.HTML">page1</A></P>
+		<P id="title">Telecharger mon <A HREF="celvie.doc">super fichier</A></P>
+		<!""PROBLEME ou pas, nous l'ignorons du fait qu'on a deja le fichier sur notre ordinateur"">
+
+
+
+
+###
+<!"" "">
+<!"" "">
+	</body>
+</html>
+
